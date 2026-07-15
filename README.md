@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,15:1a0b2e,35:2d1b4e,55:4c2a85,75:7c3aed,100:a78bfa&height=280&section=header&text=KRITAGYA%20YADAV&fontSize=70&fontColor=ffffff&fontAlignY=42&desc=Crafting%20Code%20%C2%B7%20Automating%20Infrastructure%20%C2%B7%20Shipping%20Ideas&descAlignY=60&descSize=17&animation=fadeIn&fontAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,15:1a0b2e,35:2d1b4e,55:4c2a85,75:7c3aed,100:a78bfa&height=280&section=header&text=KRITAGYA%20YADAV&fontSize=70&fontColor=ffffff&fontAlignY=42&desc=Java%20%26%20Spring%20Boot%20Developer%20%C2%B7%20DevOps%20Learner&descAlignY=60&descSize=17&animation=fadeIn&fontAlign=50" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=900&color=C4B5FD&center=true&vCenter=true&width=680&lines=B.Tech+CSE+%40+KCC+Institute+of+Technology;DevOps+%26+Full-Stack+Explorer;MERN+Stack+%C2%B7+CI%2FCD+%C2%B7+Cloud+Native;Certified+Claude+Code+in+Action+%E2%9C%93;Turning+%E2%98%95+into+%3C%2F%3E" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=900&color=C4B5FD&center=true&vCenter=true&width=680&lines=B.Tech+CSE+%40+KCC+Institute+of+Technology;Java+%26+Spring+Boot+Developer;DevOps+Learner+%C2%B7+CI%2FCD+%C2%B7+Cloud+Native;Certified+Claude+Code+in+Action+%E2%9C%93;Turning+%E2%98%95+into+%3C%2F%3E" alt="Typing SVG"/>
 
 <br/><br/>
 
@@ -32,8 +32,9 @@ whoami:
   education:   B.Tech CSE @ KCC Institute of Technology (AKTU)
   graduating:  2027
   semester:    5th — actively building
-  focus:      [DevOps, Full-Stack Dev, Problem Solving]
-  exploring:  [Docker, CI/CD, AWS/Azure, Linux]
+  role:        Java / Spring Boot Developer
+  focus:      [Backend Development, Problem Solving]
+  learning:   [DevOps, Docker, CI/CD, AWS/Azure, Linux]
   contact:
     email:     kritagyay2005@gmail.com
     phone:     +91 8368099806
@@ -93,7 +94,7 @@ whoami:
 <details open>
 <summary><b>⚙️ Frameworks & Libraries</b></summary><br/>
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,tailwind,vite&theme=dark" />
+<img src="https://skillicons.dev/icons?i=spring,java,react,nodejs,express,tailwind,vite&theme=dark" />
 
 </details>
 
@@ -179,11 +180,11 @@ whoami:
 
 <table>
 <tr>
+<td align="center" width="20%">☕<br/><b>Spring Boot</b><br/><sub>Core Strength</sub></td>
 <td align="center" width="20%">🐳<br/><b>Docker</b><br/><sub>Containerization</sub></td>
 <td align="center" width="20%">⚙️<br/><b>CI/CD</b><br/><sub>Pipelines</sub></td>
 <td align="center" width="20%">☁️<br/><b>Cloud</b><br/><sub>AWS / Azure</sub></td>
 <td align="center" width="20%">🔧<br/><b>Linux</b><br/><sub>Administration</sub></td>
-<td align="center" width="20%">🌐<br/><b>MERN</b><br/><sub>Full Stack</sub></td>
 </tr>
 </table>
 
