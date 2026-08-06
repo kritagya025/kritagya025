@@ -1,9 +1,5 @@
 <div align="center">
 
-<!-- <img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,15:0a1128,35:14213d,55:1b3a6b,75:2c6e9e,100:4fc3f7&height=260&section=header&text=KRITAGYA%20YADAV&fontSize=64&fontColor=eaf4fb&fontAlignY=38&desc=Java%20%26%20Spring%20Boot%20Developer%20%C2%B7%20DevOps%20Learner&descAlignY=56&descSize=16&animation=fadeIn" width="100%"/> -->
-
-<br/>
-
 <img src="wolf.png" width="190" style="border-radius:50%;border:3px solid #4fc3f7;box-shadow:0 0 30px #4fc3f7aa;"/>
 
 <br/><br/>
@@ -152,7 +148,7 @@ whoami:
 
 <img src="https://raw.githubusercontent.com/kritagya025/kritagya025/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 
-<sub>generated via a <a href="https://github.com/Platane/snk">Platane/snk</a> GitHub Action — see setup note below</sub>
+<sub>generated via a <a href="https://github.com/Platane/snk">Platane/snk</a> GitHub Action</sub>
 
 </div>
 
