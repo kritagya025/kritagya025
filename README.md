@@ -66,7 +66,7 @@ const wolf = {
     location:    "Noida, Uttar Pradesh, India",
     education:   "B.Tech CSE @ KCC Institute of Technology (AKTU)",
     graduating:  2027,
-    semester:    "5th — actively building",
+    semester:    "7th — actively building",
     
     role:        "Java / Spring Boot Developer",
     focus:       ["Backend Engineering", "Problem Solving"],
@@ -75,7 +75,7 @@ const wolf = {
     mindset:     "Solitary focus. Relentless pursuit. Precise execution.",
     
     contact: {
-        email:   "kritagyay2005@gmail.com",
+        email:   "kritagyay2006@gmail.com",
         phone:   "+91 8368099806",
     },
     
