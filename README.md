@@ -17,8 +17,6 @@
 
 </p>
 
-
-
 🎓 **B.Tech CSE Student** | 💻 **Backend Developer** | ☕ **Java & Spring Boot**
 
 <p align="left">
@@ -45,7 +43,7 @@
 
 📍 Based in **Noida, Uttar Pradesh, India**.
 
-📧 Reach me at **[kritagyay2005@gmail.com](mailto:kritagyay2005@gmail.com)**
+📧 Reach me at **[kritagyay2006@gmail.com](mailto:kritagyay2006@gmail.com)**
 
 ---
 
