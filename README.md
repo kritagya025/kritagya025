@@ -3,7 +3,7 @@
 <p align="left">
   <img 
     width="150" 
-    height="58" 
+    height="108" 
     alt="Pepe Frog meme" 
     src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
   />
