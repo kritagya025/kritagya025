@@ -13,7 +13,7 @@
 🌱 Currently learning **Docker, DevOps, CI/CD, Linux, and Cloud Technologies**. <br>
 🛠️ I enjoy building projects that solve real-world problems and improving my backend engineering skills. <br>
 📍 Based in **Noida, Uttar Pradesh, India**. <br>
-📧 How to reach me: **[kritagyay2005@gmail.com](mailto:kritagyay2005@gmail.com)**
+📧 How to reach me: **[kritagyay2006@gmail.com](mailto:kritagyay2006@gmail.com)**
 
 ---
 
