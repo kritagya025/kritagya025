@@ -1,55 +1,9 @@
 # Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
 
-<table>
-<tr>
+<p align="left">
+  <img src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true" width="150" height="108" alt="Pepe Frog meme" /><img src="[https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="120" alt="Coding cat meme](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)" />
+</p>
 
-<td align="center">
-  <img 
-    src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
-    width="110"
-    height="85"
-    alt="Pepe Frog"
-  />
-</td>
-
-<td align="center">
-  <img 
-    src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
-    width="110"
-    height="85"
-    alt="Coding Cat"
-  />
-</td>
-
-<td align="center">
-  <img 
-    src="https://media.tenor.com/images/9c9f7cdd31c82b3c8f2f0c3d8c0e1e52/tenor.gif"
-    width="110"
-    height="85"
-    alt="Programmer Meme"
-  />
-</td>
-
-<td align="center">
-  <img 
-    src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif"
-    width="110"
-    height="85"
-    alt="Coding"
-  />
-</td>
-
-<td align="center">
-  <img 
-    src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif"
-    width="110"
-    height="85"
-    alt="Developer"
-  />
-</td>
-
-</tr>
-</table>
 
 
 
