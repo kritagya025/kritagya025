@@ -5,6 +5,14 @@
 <p>
   <img width="100" height="58" alt="coding gif" src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" />
 </p>
+<p align="center">
+  <img 
+    src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
+    width="250"
+    alt="Coding meme"
+  />
+</p>
+
 
 ### About Me 🚀
 
