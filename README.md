@@ -5,7 +5,7 @@
 <!-- <p>
   <img width="100" height="58" alt="coding gif" src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" />
 </p> -->
-<p align="center">
+<p>
   <img 
     src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
     width="150"
