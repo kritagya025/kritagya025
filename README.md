@@ -7,14 +7,16 @@
     alt="Pepe Frog meme" 
     src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
   />
+
+<img 
+ src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
+ width="150"
+ height="108"
+ alt="Coding meme"
+/>
+
 </p>
-<p align="left">
-  <img 
-    src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
-    width="150"
-    alt="Coding meme"
-  />
-</p>
+
 
 
 🎓 **B.Tech CSE Student** | 💻 **Backend Developer** | ☕ **Java & Spring Boot**
