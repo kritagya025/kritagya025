@@ -2,13 +2,13 @@
 
 ![Visitors](https://komarev.com/ghpvc/?username=kritagya025\&label=Profile%20Views\&color=blue\&style=flat)
 
-<p>
+<!-- <p>
   <img width="100" height="58" alt="coding gif" src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" />
-</p>
+</p> -->
 <p align="center">
   <img 
     src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
-    width="250"
+    width="150"
     alt="Coding meme"
   />
 </p>
