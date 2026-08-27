@@ -1,20 +1,7 @@
 # Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
 
 <p align="left">
-  <img 
-    width="150" 
-    height="108" 
-    alt="Pepe Frog meme" 
-    src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
-  />
-
-<img 
- src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
- width="150"
- height="108"
- alt="Coding meme"
-/>
-
+  <img src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true" width="150" height="108" alt="Pepe Frog meme" /><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="150" height="108" alt="Coding meme" />
 </p>
 
 🎓 **B.Tech CSE Student** | 💻 **Backend Developer** | ☕ **Java & Spring Boot**
