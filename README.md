@@ -1,4 +1,4 @@
-# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
+# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="150px" height="35px">, I'm Kritagya!
 
 <p align="left">
   <img 
