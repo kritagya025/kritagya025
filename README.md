@@ -1,8 +1,8 @@
-# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="150px" height="35px">, I'm Kritagya!
+# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
 
 <p align="left">
   <img 
-    width="100" 
+    width="150" 
     height="58" 
     alt="Pepe Frog meme" 
     src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
