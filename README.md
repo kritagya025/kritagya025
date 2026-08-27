@@ -8,7 +8,7 @@
     src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true"
   />
 </p>
-<p>
+<p align="left">
   <img 
     src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif"
     width="150"
