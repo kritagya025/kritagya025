@@ -142,6 +142,41 @@ Improves coordination and response during disaster situations.
 
 </div>
 
+## The Hunt Continues
+
+<div align="center">
+
+<p><i>Every contribution leaves a trail — and something is always following it.</i></p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kritagya025/kritagya025/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kritagya025/kritagya025/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/kritagya025/kritagya025/output/snake.svg" alt="A snake eating my GitHub contribution graph" width="100%" />
+</picture>
+
+</div>
+
+## The Den
+
+<div align="center">
+
+<p><i>Off the clock — even a lone wolf keeps a den.</i></p>
+
+<table>
+  <tr>
+    <td align="center" width="220">
+      <img src="./assets/meme-pepe.gif" width="150" alt="Pepe Frog meme" />
+      <br /><sub>when the build passes first try</sub>
+    </td>
+    <td align="center" width="220">
+      <img src="./assets/meme-cat.gif" width="120" alt="Coding cat meme" />
+      <br /><sub>2 a.m., one more bug</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
 ## Connect
 
 <div align="center">
