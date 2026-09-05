@@ -115,15 +115,15 @@ A project aimed at improving coordination and management during disaster situati
 
 <p align="left">
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kritagya025&theme=default" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kritagya025&theme=github_dark" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kritagya025&theme=default" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kritagya025&theme=github_dark" />
 
 </p>
 
 <p align="left">
 
-<img width="70%" src="https://streak-stats.demolab.com/?user=kritagya025&hide_border=true" />
+<img width="70%" src="https://streak-stats.demolab.com/?user=kritagya025&theme=dark&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&currStreakNum=A5F3FF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E" alt="Contribution streak"/>
 
 </p>
 
@@ -131,35 +131,71 @@ A project aimed at improving coordination and management during disaster situati
 
 ## Contribution Graph 📈
 
-<p align="center">
+<div align="center">
 
-<img src="https://ghchart.rshah.org/kritagya025" width="100%"/>
+<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
 
-</p>
+<h3>Consistency Over Intensity</h3>
+
+<p><i>Every square is a day the work got done — quiet, steady, deliberate.</i></p>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://ghchart.rshah.org/1f6feb/kritagya025" width="820" alt="kritagya025 contribution graph"/>
+    </td>
+  </tr>
+</table>
+
+<p><sub>🐺 <b>Lone wolf, steady pace</b> &nbsp;·&nbsp; precision over noise.</sub></p>
+
+<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
+
+</div>
 
 ---
 
 ## Connect With Me 📭
 
-<p align="left">
+<div align="center">
 
-<a href="https://www.linkedin.com/in/kritagya-yadav/">
-  <img width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-</a>
+<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
 
-  
+<p><img src="https://raw.githubusercontent.com/kritagya025/kritagya025/main/wolf.png" width="72" alt="Lone wolf mark"/></p>
 
-<a href="https://github.com/kritagya025">
-  <img width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-</a>
+<h3>Let's Build Something</h3>
 
-  
+<p><i>Hunts alone, ships with the pack — open to backend roles, internships &amp; collaboration.</i></p>
 
-<a href="mailto:kritagyay2006@gmail.com">
-  <img width="35px" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" />
-</a>
+<table>
+  <tr>
+    <td align="center" width="190">
+      <a href="https://www.linkedin.com/in/kritagya-yadav/">
+        <img src="https://skillicons.dev/icons?i=linkedin" width="48" alt="LinkedIn"/>
+        <br/><b>LinkedIn</b>
+        <br/><sub>Kritagya Yadav</sub>
+      </a>
+    </td>
+    <td align="center" width="190">
+      <a href="https://github.com/kritagya025">
+        <img src="https://skillicons.dev/icons?i=github" width="48" alt="GitHub"/>
+        <br/><b>GitHub</b>
+        <br/><sub>@kritagya025</sub>
+      </a>
+    </td>
+    <td align="center" width="190">
+      <a href="mailto:kritagyay2006@gmail.com">
+        <img src="https://skillicons.dev/icons?i=gmail" width="48" alt="Email"/>
+        <br/><b>Email</b>
+        <br/><sub>kritagyay2006</sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-</p>
+<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
+
+</div>
 
 ---
 
