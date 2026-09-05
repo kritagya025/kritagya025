@@ -115,9 +115,9 @@ A project aimed at improving coordination and management during disaster situati
 
 <p align="left">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=kritagya025&show_icons=true&hide_border=true&include_all_commits=true&count_private=true" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kritagya025&theme=default" />
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kritagya025&layout=compact&hide_border=true&langs_count=8" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kritagya025&theme=default" />
 
 </p>
 
@@ -133,7 +133,7 @@ A project aimed at improving coordination and management during disaster situati
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kritagya025&hide_border=true&area=true" width="100%"/>
+<img src="https://ghchart.rshah.org/kritagya025" width="100%"/>
 
 </p>
 
@@ -155,7 +155,7 @@ A project aimed at improving coordination and management during disaster situati
 
   
 
-<a href="mailto:kritagyay2005@gmail.com">
+<a href="mailto:kritagyay2006@gmail.com">
   <img width="35px" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" />
 </a>
 
