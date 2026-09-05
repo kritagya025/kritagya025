@@ -1,0 +1,46 @@
+name: Refresh profile assets
+
+on:
+  schedule:
+    # 03:20 UTC daily — after most of the previous day's activity has landed.
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_profile.py"
+      - ".github/workflows/refresh-profile.yml"
+
+# A queued nightly run and a manual one should never race to commit.
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      # Only what the commit step needs; the token is never printed or passed on.
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate profile cards
+        env:
+          # The default token. It is not required to read this public data —
+          # it just raises the API rate limit for the per-repo language calls.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: kritagya025
+        run: python scripts/build_profile.py
+
+      - name: Commit refreshed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --staged --quiet || git commit -m "chore: refresh profile cards"
+          git push
