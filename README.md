@@ -142,7 +142,7 @@ A project aimed at improving coordination and management during disaster situati
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/kritagya025/kritagya025/main/assets/trail.svg?v=202609130613" width="820" alt="kritagya025 contribution graph"/>
+      <img src="https://raw.githubusercontent.com/kritagya025/kritagya025/main/assets/trail.svg" width="820" alt="kritagya025 contribution graph"/>
     </td>
   </tr>
 </table>

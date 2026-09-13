@@ -2,8 +2,9 @@ name: Refresh profile assets
 
 on:
   schedule:
-    # 03:20 UTC daily — after most of the previous day's activity has landed.
-    - cron: "20 3 * * *"
+    # Every 3 hours: the committed SVG is a snapshot, so this bounds how
+    # stale it can get. Scheduled runs are best-effort and may drift.
+    - cron: "20 */3 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -37,17 +38,10 @@ jobs:
           GITHUB_USERNAME: kritagya025
         run: python scripts/build_profile.py
 
-      - name: Re-stamp the contribution graph URL
-        run: |
-          # GitHub's image proxy (camo) caches by URL, so a URL that never
-          # changes never re-fetches. Bump the stamp whenever the SVG is rebuilt.
-          stamp=$(date -u +%Y%m%d%H%M)
-          sed -i -E "s#(assets/trail\.svg)\?v=[0-9]+#\1?v=$stamp#" README.md
-
       - name: Commit refreshed cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/ README.md
+          git add assets/
           git diff --staged --quiet || git commit -m "chore: refresh profile cards"
           git push
