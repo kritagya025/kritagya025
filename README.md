@@ -142,7 +142,7 @@ A project aimed at improving coordination and management during disaster situati
 <table>
   <tr>
     <td align="center">
-      <img src="https://ghchart.rshah.org/1f6feb/kritagya025" width="820" alt="kritagya025 contribution graph"/>
+      <img src="https://ghchart.rshah.org/1f6feb/kritagya025?v=20260913" width="820" alt="kritagya025 contribution graph"/>
     </td>
   </tr>
 </table>
