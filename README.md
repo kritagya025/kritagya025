@@ -129,32 +129,6 @@ A project aimed at improving coordination and management during disaster situati
 
 ---
 
-## Contribution Graph 📈
-
-<div align="center">
-
-<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
-
-<h3>Consistency Over Intensity</h3>
-
-<p><i>Every square is a day the work got done — quiet, steady, deliberate.</i></p>
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/kritagya025/kritagya025/main/assets/trail.svg" width="820" alt="kritagya025 contribution graph"/>
-    </td>
-  </tr>
-</table>
-
-<p><sub>🐺 <b>Lone wolf, steady pace</b> &nbsp;·&nbsp; precision over noise.</sub></p>
-
-<p><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1F6FEB,50:A5F3FF,100:1F6FEB&height=3&section=header" width="88%" alt=""/></p>
-
-</div>
-
----
-
 ## Connect With Me 📭
 
 <div align="center">
