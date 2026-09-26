@@ -34,7 +34,7 @@
   <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace">
     <rect x="64" y="44" width="34" height="2" fill="#4FC3F7"/>
     <text x="64" y="74" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" letter-spacing="3.2" fill="#9DB4CE">CONTRIBUTION TRAIL</text>
-    <text x="64" y="96" font-size="11.5" fill="#5F7796">consistency leaves tracks · 366 contributions, 77 active days</text>
+    <text x="64" y="96" font-size="11.5" fill="#5F7796">consistency leaves tracks · 371 contributions, 78 active days</text>
     <text x="76" y="122" font-size="10.5" fill="#5F7796">Sep</text>
     <text x="166" y="122" font-size="10.5" fill="#5F7796">Nov</text>
     <text x="241" y="122" font-size="10.5" fill="#5F7796">Dec</text>
@@ -420,7 +420,7 @@
     <rect x="856" y="179" width="12" height="12" rx="2.5" fill="#0E1830"/>
     <rect x="856" y="194" width="12" height="12" rx="2.5" fill="#0E1830"/>
     <rect x="856" y="209" width="12" height="12" rx="2.5" fill="#0E1830"/>
-    <rect x="856" y="224" width="12" height="12" rx="2.5" fill="#0E1830"/>
+    <rect x="856" y="224" width="12" height="12" rx="2.5" fill="#17415F"/>
     <text x="76" y="271" font-size="10.5" fill="#5F7796">less</text>
     <rect x="114" y="261" width="12" height="12" rx="2.5" fill="#0E1830"/>
     <rect x="130" y="261" width="12" height="12" rx="2.5" fill="#17415F"/>
