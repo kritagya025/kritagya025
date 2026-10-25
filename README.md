@@ -16,7 +16,7 @@ Java & Spring Boot Developer · B.Tech CSE @ KCC Institute of Technology (AKTU)
 
 ## About
 
-5th-semester CSE student at KCC Institute of Technology, Noida. I build backend services with Java and Spring Boot, and I'm currently picking up DevOps tooling — Docker, CI/CD pipelines, and cloud deployments. I like understanding how systems fit together.
+5th-semester CSE student at KCC Institute of Technology, Noida. I build backend services with Java and Spring Boot, and I'm currently picking up DevOps tooling -- Docker, CI/CD pipelines, and cloud deployments. I like understanding how systems fit together.
 
 Reach me at kritagyay2005@gmail.com or +91 8368099806.
 
@@ -47,9 +47,18 @@ Reach me at kritagyay2005@gmail.com or +91 8368099806.
 <br/><br/>
 
 **Tools & Platforms**<br/>
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,npm&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman,npm&theme=dark"/>
 
 </div>
+
+## Projects
+
+- [**KeyVault**](https://github.com/kritagya025/KeyVault) -- Secure management and handling of sensitive information.
+- [**Event Booking System**](https://github.com/kritagya025/Event-Booking-System) -- Event management and booking workflow.
+- [**LinkPluse**](https://github.com/kritagya025/URL_SHORTNER-LinkPluse-) -- URL shortener with a backend-focused architecture.
+- [**Student Management System**](https://github.com/kritagya025/student-management) -- CRUD system for student records.
+- [**Expense Tracker**](https://github.com/kritagya025/Expense-Tracker) -- Personal expense tracking and financial records.
+- [**Disaster Coordination System**](https://github.com/kritagya025/disaster-coordination-system) -- Coordination tooling for disaster response.
 
 ## GitHub Stats
 
