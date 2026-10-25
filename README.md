@@ -1,6 +1,13 @@
+# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
+
 <div align="center">
 
 <img src="wolf.png" width="150"/>
+
+<p>
+  <img src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true" width="150" height="108" alt="Pepe Frog meme"/>
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="120" alt="Coding cat meme"/>
+</p>
 
 # Kritagya Yadav
 
