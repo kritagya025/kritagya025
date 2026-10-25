@@ -13,7 +13,7 @@ Java & Spring Boot Developer · B.Tech CSE @ KCC Institute of Technology (AKTU)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kritagya-yadav/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/kritagya025)
-[![Email](https://img.shields.io/badge/Email-Contact-ea4335?style=flat&logo=gmail&logoColor=white)](mailto:kritagyay2005@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-ea4335?style=flat&logo=gmail&logoColor=white)](mailto:kritagyay2006@gmail.com)
 
 </div>
 
@@ -23,7 +23,7 @@ Java & Spring Boot Developer · B.Tech CSE @ KCC Institute of Technology (AKTU)
 
 5th-semester CSE student at KCC Institute of Technology, Noida. I build backend services with Java and Spring Boot, and I'm currently picking up DevOps tooling -- Docker, CI/CD pipelines, and cloud deployments. I like understanding how systems fit together.
 
-Reach me at kritagyay2005@gmail.com or +91 8368099806.
+Reach me at kritagyay2006@gmail.com or +91 8368099806.
 
 ## Certifications
 
@@ -82,7 +82,7 @@ Reach me at kritagyay2005@gmail.com or +91 8368099806.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/kritagya025/kritagya025/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/kritagya025/kritagya025/output/snake-dark.svg" width="100%"/>
 
 <sub>Generated via <a href="https://github.com/Platane/snk">Platane/snk</a></sub>
 

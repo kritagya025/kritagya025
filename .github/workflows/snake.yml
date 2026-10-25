@@ -28,8 +28,8 @@ jobs:
           # Dot colours are the same five-step ramp the contribution trail
           # card uses, so the snake reads as part of the same system.
           outputs: |
-            dist/snake.svg?color_snake=#2C6E9E&color_dots=#EBEDF0,#C7E4F5,#8BC9EC,#4FC3F7,#2C6E9E
-            dist/snake-dark.svg?color_snake=#4FC3F7&color_dots=#0E1830,#17415F,#216E96,#2C9BCB,#4FC3F7
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v4
