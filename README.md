@@ -1,8 +1,6 @@
-# Hey <img src="https://raw.githubusercontent.com/Abanoub-Asaad/Abanoub-Asaad/main/Images/wave.gif" width="40px" height="35px">, I'm Kritagya!
+# Hey, I'm Kritagya!
 
 <div align="center">
-
-<img src="wolf.png" width="150"/>
 
 <p>
   <img src="https://github.com/Abanoub-Asaad/Abanoub-Asaad/blob/main/Images/pepe-frog.gif?raw=true" width="150" height="108" alt="Pepe Frog meme"/>
@@ -93,5 +91,7 @@ Reach me at kritagyay2005@gmail.com or +91 8368099806.
 ---
 
 <div align="center">
+<img src="wolf.png" width="72"/>
+<br/>
 <sub>Kritagya Yadav · Noida, India</sub>
 </div>
