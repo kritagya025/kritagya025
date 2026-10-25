@@ -69,7 +69,7 @@ Reach me at kritagyay2006@gmail.com or +91 8368099806.
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=kritagya025&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=github_dark"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=kritagya025&show_icons=true&hide_border=true&count_private=true&theme=github_dark"/>
 <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kritagya025&layout=compact&hide_border=true&theme=github_dark&langs_count=8"/>
 
 <br/>
