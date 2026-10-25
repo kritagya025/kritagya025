@@ -91,6 +91,11 @@ Reach me at kritagyay2006@gmail.com or +91 8368099806.
 ---
 
 <div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" alt="Daily Tech Quote" />
+
+<br/><br/>
+
 <img src="wolf.png" width="72"/>
 <br/>
 <sub>Kritagya Yadav · Noida, India</sub>
