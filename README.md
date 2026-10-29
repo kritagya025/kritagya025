@@ -14,6 +14,7 @@ Java & Spring Boot Developer · B.Tech CSE @ KCC Institute of Technology (AKTU)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kritagya-yadav/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/kritagya025)
 [![Email](https://img.shields.io/badge/Email-Contact-ea4335?style=flat&logo=gmail&logoColor=white)](mailto:kritagyay2006@gmail.com)
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/kritagya025/badge.svg)](https://hub.xerj.org/contributors/kritagya025)
 
 </div>
 
