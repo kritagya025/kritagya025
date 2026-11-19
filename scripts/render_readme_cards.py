@@ -15,18 +15,20 @@ Run daily by .github/workflows/update-profile-art.yml.
 """
 import base64
 import datetime
+import io
 import json
 import os
 import re
 import urllib.request
 from html import escape
+from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 DATA = os.path.join(ROOT, "data", "contributions.json")
 OUT = os.path.join(ROOT, "cards")
 FONTS = os.path.join(ROOT, "fonts")
-PORTRAIT = os.path.join(ROOT, "wolf-ascii.svg")
+WOLF_PNG = os.path.join(ROOT, "wolf.png")
 
 # ---- brand tokens -----------------------------------------------------------
 PAPER = "#f3f3f1"
@@ -147,21 +149,40 @@ def text_lines(x, y, lines, lh, attrs):
     )
 
 
+def get_wolf_image():
+    """Crop and base64-encode wolf.png so it renders crisp and properly visible."""
+    if not os.path.exists(WOLF_PNG):
+        return "", 0, 0
+    im = Image.open(WOLF_PNG)
+    bbox = im.getbbox()
+    if not bbox:
+        return "", 0, 0
+    pad = 8
+    bbox_padded = (
+        max(0, bbox[0] - pad),
+        max(0, bbox[1] - pad),
+        min(im.width, bbox[2] + pad),
+        min(im.height, bbox[3] + pad),
+    )
+    cropped = im.crop(bbox_padded)
+    target_h = 275
+    target_w = int(target_h * (cropped.width / cropped.height))
+    resized = cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+    buf = io.BytesIO()
+    resized.save(buf, format="PNG", optimize=True)
+    b64 = base64.b64encode(buf.getvalue()).decode("ascii")
+    return b64, target_w, target_h
+
+
 # ---- 1 · hero -----------------------------------------------------------------
 def hero():
     h = 420
-    portrait = []
-    if os.path.exists(PORTRAIT):
-        with open(PORTRAIT, "r", encoding="utf-8") as f:
-            src = f.read()
-        rows = re.findall(r'<text xml:space="preserve"[^>]*\by="([^"]+)"[^>]*>(.*?)</text>', src, re.S)
-        for i, (y, txt) in enumerate(rows):
-            portrait.append(
-                f'<text class="f" style="animation-delay:{0.25 + i * 0.018:.3f}s;animation-duration:.35s" '
-                f'xml:space="preserve" x="20" y="{y}" fill="{INK}" font-size="7.2" '
-                f'textLength="800" lengthAdjust="spacing">{txt}</text>'
-            )
-    s = 0.41
+    b64, wolf_w, wolf_h = get_wolf_image()
+
+    tx, ty, tw, th = 510, 35, 330, 350
+    wolf_x = tx + (tw - wolf_w) / 2
+    wolf_y = ty + 30 + (th - 30 - 26 - wolf_h) / 2
+
     body = f"""
 <defs>
   <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0">
@@ -171,6 +192,13 @@ def hero():
     <animateTransform attributeName="gradientTransform" type="translate" values="-600 0;600 0;600 0"
       keyTimes="0;.45;1" dur="7s" begin="1.6s" repeatCount="indefinite"/>
   </linearGradient>
+  <linearGradient id="term-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0E1830"/>
+    <stop offset="1" stop-color="#05070D"/>
+  </linearGradient>
+  <clipPath id="term-clip">
+    <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="14"/>
+  </clipPath>
 </defs>
 <rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
 <g class="f" {d(0)}>
@@ -186,8 +214,24 @@ def hero():
   <text x="48" y="396" font-family="{MONO}" font-size="13" fill="{INK}">github.com/kritagya025</text>
   <text class="nu" x="226" y="396" font-family="{MONO}" font-size="13" fill="{TECH}">&#8599;</text>
 </g>
-<g transform="translate(520 46) scale({s}) translate(-20 -37)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-  {''.join(portrait)}
+
+<!-- Terminal Wolf Portrait Window -->
+<g class="r" {d(0.25)}>
+  <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="14" fill="url(#term-bg)"/>
+  <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="14" fill="none" stroke="#1B3A6B" stroke-width="1.2"/>
+  <line x1="{tx}" y1="{ty + 30}" x2="{tx + tw}" y2="{ty + 30}" stroke="#14213D" stroke-width="1"/>
+  <circle cx="{tx + 18}" cy="{ty + 15}" r="4.5" fill="#ff5f56"/>
+  <circle cx="{tx + 32}" cy="{ty + 15}" r="4.5" fill="#ffbd2e"/>
+  <circle cx="{tx + 46}" cy="{ty + 15}" r="4.5" fill="#27c93f"/>
+  <text x="{tx + tw / 2}" y="{ty + 19}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="#5F7796">kritagya@system:~$ ./wolf</text>
+  <g clip-path="url(#term-clip)">
+    <image href="data:image/png;base64,{b64}" x="{wolf_x:.1f}" y="{wolf_y:.1f}" width="{wolf_w}" height="{wolf_h}"/>
+  </g>
+  <line x1="{tx}" y1="{ty + th - 26}" x2="{tx + tw}" y2="{ty + th - 26}" stroke="#14213D" stroke-width="1"/>
+  <text x="{tx + 16}" y="{ty + th - 9}" font-family="{MONO}" font-size="10.5" fill="#4FC3F7">status: <tspan fill="#9DB4CE">online</tspan></text>
+  <rect x="{tx + 104}" y="{ty + th - 19}" width="6" height="11" fill="#4FC3F7">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
 </g>
 """
     write("hero.svg", svg(W, h, body, ["serif", "serif-i", "sans", "mono"],
@@ -419,7 +463,7 @@ if __name__ == "__main__":
     # 1. Hero
     hero()
 
-    # 2. Three World Tiles (matching Avi's Build, Brand, Learn layout)
+    # 2. Three World Tiles
     tile("build", "BACKEND", TECH, "#ffffff", "24+", "repos",
          "Scalable backend APIs, Spring Boot microservices, MySQL & MongoDB architecture.", 3.1, 0)
     tile("brand", "DEVOPS", STUDIO, "#ffffff", "600+", "commits",
