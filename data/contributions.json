@@ -1,11 +1,11 @@
 {
   "username": "kritagya025",
-  "generated_at": "2026-11-19T11:38:04Z",
+  "generated_at": "2026-11-19T11:43:13Z",
   "range": {
     "start": "2025-11-16",
     "end": "2026-11-19"
   },
-  "total_contributions": 615,
+  "total_contributions": 616,
   "active_days": 121,
   "avg_per_active_day": 5.1,
   "current_streak": {
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-11",
-      "total": 110
+      "total": 111
     }
   ],
   "days": [
@@ -1919,71 +1919,8 @@
     },
     {
       "date": "2026-11-19",
-      "count": 5,
+      "count": 6,
       "level": 2
     }
-  ],
-  "profile": {
-    "repos_count": 27,
-    "followers_count": 2,
-    "stars_count": 5,
-    "languages": {
-      "Python": 2878,
-      "Java": 61094,
-      "HTML": 17249,
-      "JavaScript": 20950,
-      "Jupyter Notebook": 991,
-      "CSS": 1309
-    },
-    "featured": [
-      {
-        "name": "KeyVault",
-        "description": "Secure management and handling of sensitive credentials & access keys.",
-        "language": "Java",
-        "stars": 0,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/KeyVault"
-      },
-      {
-        "name": "Event-Booking-System",
-        "description": "Comprehensive event management, seat allocation, and booking workflow with Spring Boot.",
-        "language": "Java",
-        "stars": 0,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/Event-Booking-System"
-      },
-      {
-        "name": "URL_SHORTNER-LinkPluse-",
-        "description": "High-performance URL shortener with analytics and backend-focused architecture.",
-        "language": "JavaScript",
-        "stars": 1,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/URL_SHORTNER-LinkPluse-"
-      },
-      {
-        "name": "student-management",
-        "description": "Full-featured CRUD system for academic records & student information.",
-        "language": "Java",
-        "stars": 1,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/student-management"
-      },
-      {
-        "name": "Expense-Tracker",
-        "description": "Personal finance tracking, categorised budgeting, and spending analytics.",
-        "language": "HTML",
-        "stars": 1,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/Expense-Tracker"
-      },
-      {
-        "name": "disaster-coordination-system",
-        "description": "Emergency response coordination tooling and disaster resource dispatch.",
-        "language": "CSS",
-        "stars": 1,
-        "forks": 0,
-        "url": "https://github.com/kritagya025/disaster-coordination-system"
-      }
-    ]
-  }
+  ]
 }
