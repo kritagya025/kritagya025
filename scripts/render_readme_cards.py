@@ -21,13 +21,13 @@ import os
 import re
 import urllib.request
 from html import escape
-from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 DATA = os.path.join(ROOT, "data", "contributions.json")
 OUT = os.path.join(ROOT, "cards")
 FONTS = os.path.join(ROOT, "fonts")
+WOLF_ART = os.path.join(ROOT, "wolf_art.png")
 WOLF_PNG = os.path.join(ROOT, "wolf.png")
 
 # ---- brand tokens -----------------------------------------------------------
@@ -150,28 +150,39 @@ def text_lines(x, y, lines, lh, attrs):
 
 
 def get_wolf_image():
-    """Crop and base64-encode wolf.png so it renders crisp and properly visible."""
-    if not os.path.exists(WOLF_PNG):
-        return "", 0, 0
-    im = Image.open(WOLF_PNG)
-    bbox = im.getbbox()
-    if not bbox:
-        return "", 0, 0
-    pad = 8
-    bbox_padded = (
-        max(0, bbox[0] - pad),
-        max(0, bbox[1] - pad),
-        min(im.width, bbox[2] + pad),
-        min(im.height, bbox[3] + pad),
-    )
-    cropped = im.crop(bbox_padded)
-    target_h = 275
-    target_w = int(target_h * (cropped.width / cropped.height))
-    resized = cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
-    buf = io.BytesIO()
-    resized.save(buf, format="PNG", optimize=True)
-    b64 = base64.b64encode(buf.getvalue()).decode("ascii")
-    return b64, target_w, target_h
+    """Load the pre-cropped wolf image, or dynamically crop if PIL is available."""
+    # 1. Prefer reading the pre-cropped wolf_art.png directly (zero external dependencies)
+    if os.path.exists(WOLF_ART):
+        with open(WOLF_ART, "rb") as f:
+            b64 = base64.b64encode(f.read()).decode("ascii")
+        return b64, 209, 275
+
+    # 2. Dynamic crop fallback if PIL is installed
+    if os.path.exists(WOLF_PNG):
+        try:
+            from PIL import Image
+            im = Image.open(WOLF_PNG)
+            bbox = im.getbbox()
+            if bbox:
+                pad = 8
+                bbox_padded = (
+                    max(0, bbox[0] - pad),
+                    max(0, bbox[1] - pad),
+                    min(im.width, bbox[2] + pad),
+                    min(im.height, bbox[3] + pad),
+                )
+                cropped = im.crop(bbox_padded)
+                target_h = 275
+                target_w = int(target_h * (cropped.width / cropped.height))
+                resized = cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+                buf = io.BytesIO()
+                resized.save(buf, format="PNG", optimize=True)
+                b64 = base64.b64encode(buf.getvalue()).decode("ascii")
+                return b64, target_w, target_h
+        except Exception:
+            pass
+
+    return "", 0, 0
 
 
 # ---- 1 · hero -----------------------------------------------------------------
