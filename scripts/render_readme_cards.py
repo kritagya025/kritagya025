@@ -345,54 +345,83 @@ def section_title(text, italic, theme):
 
 
 # ---- 5 · blue contribution graph -----------------------------------------------
-BLUE = [PAPER_DEEP, "#c8d3ff", "#94a8ff", "#6280ff", TECH, "#1a3be0"]
-
-
-def level_for(c):
-    return 0 if c == 0 else 1 if c <= 5 else 2 if c <= 15 else 3 if c <= 30 else 4 if c <= 50 else 5
+BLUE = [PAPER_DEEP, "#b4c7ff", "#6e92ff", "#3363f5", "#1a3eb8"]
 
 
 def heatmap(data):
     days = data["days"]
     first = datetime.date.fromisoformat(days[0]["date"])
     lead = (first.weekday() + 1) % 7  # sunday = 0
-    cell, step, gx, gy = 12, 15, 44, 96
-    cells, months, seen = [], [], set()
+    cell, step, gx, gy = 12, 15, 54, 102
+
+    cells = []
+    seen_months = {}
     for i, day in enumerate(days):
         k = i + lead
         col, row = divmod(k, 7)
         date = datetime.date.fromisoformat(day["date"])
-        if date.day <= 7 and (date.year, date.month) not in seen and row == 0:
-            seen.add((date.year, date.month))
-            months.append((col, date.strftime("%b")))
+        m_key = (date.year, date.month)
+        if m_key not in seen_months:
+            seen_months[m_key] = (col, date.strftime("%b"))
         c = day["count"]
+        lvl = min(day.get("level", 0), 4)
         delay = 1.0 + col * 0.03 + row * 0.02
         cells.append(
             f'<rect class="p" style="animation-delay:{delay:.2f}s" x="{gx + col * step}" y="{gy + row * step}" '
-            f'width="{cell}" height="{cell}" rx="3" fill="{BLUE[level_for(c)]}">'
+            f'width="{cell}" height="{cell}" rx="3" fill="{BLUE[lvl]}">'
             f'<title>{day["date"]}: {c} contribution{"s" if c != 1 else ""}</title></rect>'
         )
+
+    all_m = list(seen_months.values())
+    if len(all_m) > 1 and all_m[1][0] - all_m[0][0] < 3:
+        all_m = all_m[1:]
+
     ncols = (len(days) + lead + 6) // 7
     right = gx + ncols * step - 3
-    labels = "".join(
-        f'<text x="{gx + col * step}" y="{gy + 7 * step + 16}" font-family="{MONO}" font-size="11" fill="{MUTED}">{m}</text>'
-        for col, m in months if col < ncols - 12
+
+    month_labels = "".join(
+        f'<text x="{gx + col * step}" y="{gy - 10}" font-family="{MONO}" font-size="11" fill="{MUTED}">{m}</text>'
+        for col, m in all_m
     )
-    legend_x = right - len(BLUE) * 14
-    legend = "".join(
-        f'<rect x="{legend_x + i * 14}" y="{gy + 7 * step + 6}" width="11" height="11" rx="2.5" fill="{c}"/>'
+
+    weekday_labels = (
+        f'<text x="{gx - 10}" y="{gy + 1 * step + 10}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{MUTED}">Mon</text>'
+        f'<text x="{gx - 10}" y="{gy + 3 * step + 10}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{MUTED}">Wed</text>'
+        f'<text x="{gx - 10}" y="{gy + 5 * step + 10}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{MUTED}">Fri</text>'
+    )
+
+    legend_x = right - len(BLUE) * 15 - 35
+    legend_y = gy + 7 * step + 24
+    legend_rects = "".join(
+        f'<rect x="{legend_x + i * 15}" y="{legend_y - 10}" width="{cell}" height="{cell}" rx="3" fill="{c}"/>'
         for i, c in enumerate(BLUE)
     )
-    h = gy + 7 * step + 44
+
+    summary_text = (
+        f'<text x="{gx}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">'
+        f'{data["total_contributions"]:,} contributions in the last year · {data["current_streak"]["length"]}-day streak</text>'
+    )
+
+    legend_block = (
+        f'<g class="f" {d(2.4)}>'
+        f'{summary_text}'
+        f'<text x="{legend_x - 8}" y="{legend_y}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}">less</text>'
+        f'{legend_rects}'
+        f'<text x="{legend_x + len(BLUE) * 15 + 6}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text>'
+        f'</g>'
+    )
+
+    h = legend_y + 24
     body = f"""
 <rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
-<text class="r" {d(0.8)} x="42" y="62" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{TECH}">in blue</tspan></text>
-<text class="f" {d(0.8)} x="{right}" y="60" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">REFRESHED DAILY</text>
+<text class="r" {d(0.8)} x="42" y="52" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{TECH}">in blue</tspan></text>
+<text class="f" {d(0.8)} x="{right}" y="50" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">REFRESHED DAILY</text>
+<g class="f" {d(1.0)}>
+  {month_labels}
+  {weekday_labels}
+</g>
 {''.join(cells)}
-<g class="f" {d(2.4)}>{labels}
-<text x="{legend_x - 8}" y="{gy + 7 * step + 16}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}">less</text>
-{legend}
-<text x="{legend_x + len(BLUE) * 14 + 2}" y="{gy + 7 * step + 16}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text></g>
+{legend_block}
 """
     write("heatmap.svg", svg(W, h, body, ["serif", "serif-i", "mono"],
                              f'Contribution graph: {data["total_contributions"]:,} contributions in the last year'))
