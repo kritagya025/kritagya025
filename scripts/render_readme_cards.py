@@ -345,8 +345,8 @@ def section_title(text, italic, theme):
 
 
 # ---- 5 · green contribution graph ----------------------------------------------
-GREEN = [PAPER_DEEP, "#9be9a8", "#40c463", "#30a14e", "#216e39"]
-GREEN_ACCENT = "#216e39"
+GREEN = ["#ebedf0", "#9be9a8", "#40c463", "#2da44e", "#116329"]
+GREEN_ACCENT = "#116329"
 
 
 def heatmap(data):
@@ -369,7 +369,7 @@ def heatmap(data):
         delay = 1.0 + col * 0.03 + row * 0.02
         cells.append(
             f'<rect class="p" style="animation-delay:{delay:.2f}s" x="{gx + col * step}" y="{gy + row * step}" '
-            f'width="{cell}" height="{cell}" rx="3" fill="{GREEN[lvl]}">'
+            f'width="{cell}" height="{cell}" rx="3" fill="{GREEN[lvl]}" stroke="rgba(27,31,35,0.08)" stroke-width="0.8">'
             f'<title>{day["date"]}: {c} contribution{"s" if c != 1 else ""}</title></rect>'
         )
 
@@ -394,7 +394,7 @@ def heatmap(data):
     legend_x = right - len(GREEN) * 15 - 35
     legend_y = gy + 7 * step + 24
     legend_rects = "".join(
-        f'<rect x="{legend_x + i * 15}" y="{legend_y - 10}" width="{cell}" height="{cell}" rx="3" fill="{c}"/>'
+        f'<rect x="{legend_x + i * 15}" y="{legend_y - 10}" width="{cell}" height="{cell}" rx="3" fill="{c}" stroke="rgba(27,31,35,0.08)" stroke-width="0.8"/>'
         for i, c in enumerate(GREEN)
     )
 
@@ -406,9 +406,9 @@ def heatmap(data):
     legend_block = (
         f'<g class="f" {d(2.4)}>'
         f'{summary_text}'
-        f'<text x="{legend_x - 8}" y="{legend_y}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}">less</text>'
+        f'<text x="{legend_x - 8}" y="{legend_y}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}">Less</text>'
         f'{legend_rects}'
-        f'<text x="{legend_x + len(GREEN) * 15 + 6}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text>'
+        f'<text x="{legend_x + len(GREEN) * 15 + 6}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">More</text>'
         f'</g>'
     )
 
