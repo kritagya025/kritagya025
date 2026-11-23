@@ -16,7 +16,7 @@
   <a href="https://hub.xerj.org/contributors/kritagya025"><img src="https://hub.xerj.org/contributors/kritagya025/badge.svg" height="28" alt="XERJ Corpus Hub contributor" /></a>
 </p>
 
-<img src="./cards/heatmap.svg" width="100%" alt="Kritagya's contribution graph, in blue, refreshed daily" /><br>
+<img src="./cards/heatmap.svg" width="100%" alt="Kritagya's contribution graph, in green, refreshed daily" /><br>
 <img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, by month, with streak and busiest day" /><br>
 <a href="https://github.com/kritagya025?tab=repositories"><img src="./cards/build.svg" width="33.333%" alt="BACKEND: 24+ repos" /></a><a href="https://github.com/kritagya025"><img src="./cards/brand.svg" width="33.333%" alt="DEVOPS: 600+ commits" /></a><a href="https://www.linkedin.com/in/kritagya-yadav/"><img src="./cards/learn.svg" width="33.333%" alt="PROFILE: B.Tech CSE" /></a><br>
 <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-coding-dark.svg" /><img src="./cards/title-coding-light.svg" width="100%" alt="What I'm coding" /></picture><br>

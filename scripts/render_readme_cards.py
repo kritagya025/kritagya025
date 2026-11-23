@@ -344,8 +344,9 @@ def section_title(text, italic, theme):
     write(f"title-coding-{theme}.svg", svg(W, 64, body, ["serif", "serif-i"], f"{text} {italic}", bottom=0))
 
 
-# ---- 5 · blue contribution graph -----------------------------------------------
-BLUE = [PAPER_DEEP, "#b4c7ff", "#6e92ff", "#3363f5", "#1a3eb8"]
+# ---- 5 · green contribution graph ----------------------------------------------
+GREEN = [PAPER_DEEP, "#9be9a8", "#40c463", "#30a14e", "#216e39"]
+GREEN_ACCENT = "#216e39"
 
 
 def heatmap(data):
@@ -368,7 +369,7 @@ def heatmap(data):
         delay = 1.0 + col * 0.03 + row * 0.02
         cells.append(
             f'<rect class="p" style="animation-delay:{delay:.2f}s" x="{gx + col * step}" y="{gy + row * step}" '
-            f'width="{cell}" height="{cell}" rx="3" fill="{BLUE[lvl]}">'
+            f'width="{cell}" height="{cell}" rx="3" fill="{GREEN[lvl]}">'
             f'<title>{day["date"]}: {c} contribution{"s" if c != 1 else ""}</title></rect>'
         )
 
@@ -390,11 +391,11 @@ def heatmap(data):
         f'<text x="{gx - 10}" y="{gy + 5 * step + 10}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{MUTED}">Fri</text>'
     )
 
-    legend_x = right - len(BLUE) * 15 - 35
+    legend_x = right - len(GREEN) * 15 - 35
     legend_y = gy + 7 * step + 24
     legend_rects = "".join(
         f'<rect x="{legend_x + i * 15}" y="{legend_y - 10}" width="{cell}" height="{cell}" rx="3" fill="{c}"/>'
-        for i, c in enumerate(BLUE)
+        for i, c in enumerate(GREEN)
     )
 
     summary_text = (
@@ -407,14 +408,14 @@ def heatmap(data):
         f'{summary_text}'
         f'<text x="{legend_x - 8}" y="{legend_y}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}">less</text>'
         f'{legend_rects}'
-        f'<text x="{legend_x + len(BLUE) * 15 + 6}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text>'
+        f'<text x="{legend_x + len(GREEN) * 15 + 6}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">more</text>'
         f'</g>'
     )
 
     h = legend_y + 24
     body = f"""
 <rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
-<text class="r" {d(0.8)} x="42" y="52" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{TECH}">in blue</tspan></text>
+<text class="r" {d(0.8)} x="42" y="52" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{GREEN_ACCENT}">in green</tspan></text>
 <text class="f" {d(0.8)} x="{right}" y="50" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">REFRESHED DAILY</text>
 <g class="f" {d(1.0)}>
   {month_labels}
@@ -468,5 +469,5 @@ if __name__ == "__main__":
     section_title("What I'm", "coding", "dark")
     section_title("What I'm", "coding", "light")
 
-    # 6. Blue heatmap
+    # 6. Green heatmap
     heatmap(data)

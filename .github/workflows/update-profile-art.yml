@@ -29,7 +29,7 @@ jobs:
       - name: Scrape real contribution data (no auth needed)
         run: python scripts/fetch_contributions.py
 
-      - name: Render README cards (hero, tiles, activity, repos, blue graph)
+      - name: Render README cards (hero, tiles, activity, repos, green graph)
         run: python scripts/render_readme_cards.py
 
       - name: Commit updated art
