@@ -398,9 +398,12 @@ def heatmap(data):
         for i, c in enumerate(GREEN)
     )
 
+    cs = data["current_streak"]["length"]
+    ls = data["longest_streak"]["length"]
+    streak_str = f"{cs}-day streak" if cs > 0 else f"{ls}-day longest streak"
     summary_text = (
         f'<text x="{gx}" y="{legend_y}" font-family="{MONO}" font-size="11" fill="{MUTED}">'
-        f'{data["total_contributions"]:,} contributions in the last year · {data["current_streak"]["length"]}-day streak</text>'
+        f'{data["total_contributions"]:,} contributions in the last year · {streak_str}</text>'
     )
 
     legend_block = (
