@@ -345,7 +345,7 @@ def section_title(text, italic, theme):
 
 
 # ---- 5 · green contribution graph ----------------------------------------------
-GREEN = ["#ebedf0", "#9be9a8", "#40c463", "#2da44e", "#116329"]
+GREEN = ["#ebedf0", "#116329", "#2da44e", "#40c463", "#9be9a8"]
 GREEN_ACCENT = "#116329"
 
 
