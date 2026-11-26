@@ -419,7 +419,7 @@ def heatmap(data):
     body = f"""
 <rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
 <text class="r" {d(0.8)} x="42" y="52" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{GREEN_ACCENT}">in green</tspan></text>
-<text class="f" {d(0.8)} x="{right}" y="50" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">REFRESHED DAILY</text>
+<text class="f" {d(0.8)} x="{right}" y="50" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">AUTO-UPDATED</text>
 <g class="f" {d(1.0)}>
   {month_labels}
   {weekday_labels}
