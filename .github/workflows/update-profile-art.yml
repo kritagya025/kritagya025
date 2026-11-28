@@ -5,7 +5,8 @@ name: Update profile art
 
 "on":
   schedule:
-    - cron: "23 * * * *"   # runs hourly at an off-peak minute (avoids :00 queue drops)
+    - cron: '37 20 * * *'  # 02:07 AM IST (off-peak UTC primary)
+    - cron: '41 0 * * *'   # 06:11 AM IST (off-peak UTC backup)
   workflow_dispatch: {}
   push:
     branches: [main]
